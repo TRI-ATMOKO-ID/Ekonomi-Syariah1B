@@ -1,0 +1,159 @@
+.music-player {
+	position: fixed;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: rgba(0, 0, 0, 0.8);
+	padding: 10px;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+}
+
+.music-player audio {
+	width: 200px;
+	margin-right: 10px;
+}
+
+.music-player button {
+	background-color: transparent;
+	border: none;
+	color: white;
+	cursor: pointer;
+}
+
+@keyframes slide-in {
+	0% {
+		opacity: 0;
+		transform: translateX(-100%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.hidden-card {
+	animation: slide-in 1.5s forwards;
+}
+
+.copyrigt a {
+	color: #ffff00;
+}
+
+body {
+	background-color: black;
+}
+
+.breadcumb {
+	background-color: transparent;
+}
+
+.card {
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-body img {
+	max-width: 150px;
+	height: auto;
+	border-radius: 50%;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary, .btn-outline-primary {
+	border-radius: 30px;
+}
+
+.progress, list-group-item {
+	border-radius: 30px;
+}
+
+a {
+	text-decoration: none;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Helvetica Neue', sans-serif;
+	background-color: black;
+	color: #333333;
+}
+
+.breadcumb {
+	background-color: transparent;
+	font-size: 0.9rem;
+	margin-bottom: 1rem;
+}
+
+.breadcumb-item a {
+	color: #007bff;
+	text-decoration: none;
+}
+
+.card {
+	border: none;
+	background-color: #ffffff;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+	text-align: center;
+}
+
+.card-body img {
+	max-width: 150px;
+	height: auto;
+	border-radius: 50%;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-body h5 {
+	margin: 0.5rem 0;
+}
+
+.btn-primary {
+	background-color: #007bff;
+	border-color: #007bff;
+	padding: 0.5rem 1rem;
+	font-size: 0.9rem;
+	border-radius: 30px;
+	margin-right: 0.5rem;
+}
+
+.btn-outline-primary {
+	background-color: white;
+	border-color: #007bff;
+	padding: 0.5rem 1rem;
+	font-size: 0.9rem;
+	border-radius: 30px;
+}
+
+/* Style Progress */
+.progress {
+	background-color: #e9ecef;
+	border-radius: 30px;
+	height: 10px;
+	margin-bottom: 1rem;
+}
+
+.progress-bar {
+	background-color: #007bff;
+	border-radius: 30px;
+}
+
+.list-group-item {
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid #e9ecef;
+}
+
+@media (max-width: 767.98px) {
+	.col-lg-4, .col-lg-8 {
+		margin-bottom: 20px;
+	}
+}
