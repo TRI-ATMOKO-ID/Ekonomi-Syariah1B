@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESY B Angkatan 2023/2024</title>
+    <link rel="stylesheet" href="../style2.css">
+    <style>
+        /* CSS untuk dropdown */
+        #dropdownContainer {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-top: none;
+            border-radius: 0 0 5px 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            transition: opacity 0.5s ease, transform 0.5s ease;
+            transform: translateY(-20px);
+            z-index: 999; /* Menempatkan dropdown di atas elemen lain */
+            overflow-y: auto; /* Menambahkan scroll jika opsi terlalu banyak */
+            max-height: 200px; /* Tinggi maksimal dropdown */
+        }
+
+        .playlist.active #dropdownContainer {
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .playlist ol {
+            list-style-type: decimal;
+            margin: 0; /* Menghapus margin default */
+            padding: 10px 20px; /* Menambahkan padding pada elemen ol */
+        }
+
+        .playlist ol li {
+            margin-bottom: 5px; /* Memberikan jarak antar elemen li */
+        }
+
+        .playlist h3 {
+            cursor: pointer;
+            transition: color 0.3s ease;
+            margin-top: 0; /* Atur margin awal */
+        }
+
+        .playlist h3:hover {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SEMESTER 2</h1>
+    </header>
+    <main>
+        <section class="playlist">
+            <h2>BUDAYA MELAYU</h2>
+            <ul>
+                <li onclick="toggleDropdown()">
+                    <h3>Pengertian Melayu Dan Asal Usul Bangsa Melayu.</h3>
+                    <div id="dropdownContainer">
+                        <ol>
+                            <a href="#" style="text-decoration: none;"><li>Makalah</li></a>
+                            <li>PPT</li>
+                            <!-- Tambahkan lebih banyak lagu sesuai kebutuhan -->
+                        </ol>
+                    </div>
+                </li>
+                <li onclick="toggleDropdown()">
+                    <h3>Teori - Teori Penyebaran Islam Di Kawasan Melayu.</h3>
+                    <div id="dropdownContainer">
+                        <ol>
+                            <a href="#" style="text-decoration: none;"><li>Makalah</li></a>
+                            <li>PPT</li>
+                            <!-- Tambahkan lebih banyak lagu sesuai kebutuhan -->
+                        </ol>
+                    </div>
+                </li>
+                <li onclick="toggleDropdown()">
+                    <h3>Awal Terbentuknya Komunitas Dan Identitas Politik Muslim Di Kawasan Melayu.</h3>
+                    <div id="dropdownContainer">
+                        <ol>
+                            <a href="#" style="text-decoration: none;"><li>Makalah</li></a>
+                            <li>PPT</li>
+                            <!-- Tambahkan lebih banyak lagu sesuai kebutuhan -->
+                        </ol>
+                    </div>
+                </li>
+                <li onclick="toggleDropdown()">
+                    <h3>Ulama - Ulama Penyebar Agama Islam Dan Karyanya  Dikawasan Melayu.</h3>
+                    <div id="dropdownContainer">
+                        <ol>
+                            <a href="#" style="text-decoration: none;"><li>Makalah</li></a>
+                            <li>PPT</li>
+                            <!-- Tambahkan lebih banyak lagu sesuai kebutuhan -->
+                        </ol>
+                    </div>
+                </li>
+                <li onclick="toggleDropdown()">
+                    <h3>Nilai - Nilai Budaya Melayu Sebagai Jatidiri Alam Melayu.</h3>
+                    <div id="dropdownContainer">
+                        <ol>
+                            <a href="#" style="text-decoration: none;"><li>Makalah</li></a>
+                            <li>PPT</li>
+                            <!-- Tambahkan lebih banyak lagu sesuai kebutuhan -->
+                        </ol>
+                    </div>
+                </li>
+                <li onclick="toggleDropdown()">
+                    <h3>Nilai - Nilai Asas Perbatian Melayu.</h3>
+                    <div id="dropdownContainer">
+                        <ol>
+                            <a href="#" style="text-decoration: none;"><li>Makalah</li></a>
+                            <li>PPT</li>
+                            <!-- Tambahkan lebih banyak lagu sesuai kebutuhan -->
+                        </ol>
+                    </div>
+                </li>
+                <li onclick="toggleDropdown()">
+                    <h3>Tunjuk Ajar Melayu.</h3>
+                    <div id="dropdownContainer">
+                        <ol>
+                            <a href="#" style="text-decoration: none;"><li>Makalah</li></a>
+                            <li>PPT</li>
+                            <!-- Tambahkan lebih banyak lagu sesuai kebutuhan -->
+                        </ol>
+                    </div>
+                </li>
+                <li onclick="toggleDropdown()">
+                    <h3>Petuah Dan Amanah.</h3>
+                    <div id="dropdownContainer">
+                        <ol>
+                            <a href="#" style="text-decoration: none;"><li>Makalah</li></a>
+                            <li>PPT</li>
+                            <!-- Tambahkan lebih banyak lagu sesuai kebutuhan -->
+                        </ol>
+                    </div>
+                </li>
+                <li onclick="toggleDropdown()">
+                    <h3>Gurindam 12 Raja Ali Haji.</h3>
+                    <div id="dropdownContainer">
+                        <ol>
+                            <a href="#" style="text-decoration: none;"><li>Makalah</li></a>
+                            <li>PPT</li>
+                            <!-- Tambahkan lebih banyak lagu sesuai kebutuhan -->
+                        </ol>
+                    </div>
+                </li>
+                <li onclick="toggleDropdown()">
+                    <h3>Pantun Dan Syair Dalam Budaya Melayu.</h3>
+                    <div id="dropdownContainer">
+                        <ol>
+                            <a href="#" style="text-decoration: none;"><li>Makalah</li></a>
+                            <li>PPT</li>
+                            <!-- Tambahkan lebih banyak lagu sesuai kebutuhan -->
+                        </ol>
+                    </div>
+                </li>
+                <li onclick="toggleDropdown()">
+                    <h3>Perdagangan Dan Perekonomian Di Kepulauan Melayu.</h3>
+                    <div id="dropdownContainer">
+                        <ol>
+                            <a href="#" style="text-decoration: none;"><li>Makalah</li></a>
+                            <li>PPT</li>
+                            <!-- Tambahkan lebih banyak lagu sesuai kebutuhan -->
+                        </ol>
+                    </div>
+                </li>
+            </ul>
+            <div class="copyright text-center text-sm text-muted text-lg-start">
+
+                    © <script>
+                    document.write(new Date().getFullYear())
+                  </script>,
+                  made with <i class="fa fa-heart"></i> by
+                  <a href="https://wa.me/6285215084951" class="font-weight-bold" target="_blank">TRI ATMOKO</a>
+                <br><br><br><br><br>
+            </div>
+        </section>
+        <div class="music-player">
+            <audio loop autoplay controls>
+                <source src="../Lily - Alan Walker, K-391 & Emelie Hollow (Lirik Lagu Terjemahan).mp3" type="audio/mpeg">
+                </audio>
+                <button id="toggleMusic">Pemutar Musik</button>
+            </div>
+    </main>
+    <script>
+            const backgroundMusic = document.getElementById('backgroundMusic');
+            const playMusicButton = document.getElementById('playMusic');
+            const pauseMusicButton = document.getElementById('pauseMusic');
+
+            playMusicButton.addEventListener('click', ()=> {
+                backgroundMusic.play();
+            });
+
+            pauseMusicButton.addEventListener('click', ()=> {
+                backgroundMusic.pause();
+            });
+            </script>
+    <script>
+        const playlist = document.querySelector('.playlist');
+
+        // Fungsi untuk menampilkan/menyembunyikan dropdown saat mengklik "Data Tidak Ada"
+        function toggleDropdown() {
+            playlist.classList.toggle('active'); // Panggil fungsi untuk menyesuaikan posisi judul "Data Tidak Ada (2)"
+        }
+
+        // Fungsi untuk menggeser judul "Data Tidak Ada (2)" agar sesuai dengan posisi dropdown sebelumnya
+        function adjustSecondHeadingPosition() {
+            const dropdownContainer = document.getElementById('dropdownContainer');
+            if (dropdownContainer) {
+                const dropdownHeight = dropdownContainer.clientHeight;
+                secondHeading.style.marginTop = `${dropdownHeight}px`;
+            }
+        }
+
+        // Menutup dropdown saat pengguna mengklik di luar dropdown atau pada "Data Tidak Ada" lagi
+        document.addEventListener("click", function(event) {
+            if (!event.target.closest(".playlist") && playlist.classList.contains("active")) {
+                playlist.classList.remove("active");
+            }
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
