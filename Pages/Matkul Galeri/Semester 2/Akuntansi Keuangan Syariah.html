@@ -73,7 +73,7 @@
                 </li>
                 <li onclick="toggleDropdown1()">
                     <h3>Sejarah Dan Pemikiran Akuntansi Syariah.</h3>
-                    <div id="dropdownContainer">
+                    <div id="dropdownContainer1">
                         <ol>
                             <a download href="../../File/AKS Sejarah Dan Pemikiran Akuntansi Syariah.docx" style="text-decoration: none;"><li>Makalah</li></a>
                             <li>PPT (Soon)</li>
@@ -83,7 +83,7 @@
                 </li>
                 <li onclick="toggleDropdown2()">
                     <h3>Akuntansi Mudharabah.</h3>
-                    <div id="dropdownContainer">
+                    <div id="dropdownContainer2">
                         <ol>
                             <a download href="../../File/AKS Akuntansi Mudharabah.docx" style="text-decoration: none;"><li>Makalah</li></a>
                             <li>PPT (Soon)</li>
@@ -93,7 +93,7 @@
                 </li>
                 <li onclick="toggleDropdown3()">
                     <h3>Akuntansi Musyarakah.</h3>
-                    <div id="dropdownContainer">
+                    <div id="dropdownContainer3">
                         <ol>
                             <a download href="../../File/AKS Akuntansi Musyarakah.docx" style="text-decoration: none;"><li>Makalah</li></a>
                             <li>PPT (Soon)</li>
@@ -103,7 +103,7 @@
                 </li>
                 <li onclick="toggleDropdown4()">
                     <h3>Akuntansi Murabahah.</h3>
-                    <div id="dropdownContainer">
+                    <div id="dropdownContainer4">
                         <ol>
                             <a download href="../../File/AKS Akuntansi Murabahah.docx" style="text-decoration: none;"><li>Makalah</li></a>
                             <li>PPT (Soon)</li>
@@ -113,7 +113,7 @@
                 </li>
                 <li onclick="toggleDropdown5()">
                     <h3>Akuntansi Salam.</h3>
-                    <div id="dropdownContainer">
+                    <div id="dropdownContainer5">
                         <ol>
                             <a download href="../../File/AKS Akuntansi Salam.docx" style="text-decoration: none;"><li>Makalah</li></a>
                             <li>PPT (Soon)</li>
@@ -123,7 +123,7 @@
                 </li>
                 <li onclick="toggleDropdown6()">
                     <h3>Akuntansi Istishna'.</h3>
-                    <div id="dropdownContainer">
+                    <div id="dropdownContainer6">
                         <ol>
                             <a download href="../../File/AKS Akuntansi Istishna'.docx" style="text-decoration: none;"><li>Makalah</li></a>
                             <li>PPT (Soon)</li>
@@ -133,7 +133,7 @@
                 </li>
                 <li onclick="toggleDropdown7()">
                     <h3>Akuntansi Ijaroh.</h3>
-                    <div id="dropdownContainer">
+                    <div id="dropdownContainer7">
                         <ol>
                             <a download href="../../File/AKS Akuntansi Ijaroh.docx" style="text-decoration: none;"><li>Makalah</li></a>
                             <li>PPT (Soon)</li>
@@ -143,7 +143,7 @@
                 </li>
                 <li onclick="toggleDropdown8()">
                     <h3>Akuntansi Akad Lainnya.</h3>
-                    <div id="dropdownContainer">
+                    <div id="dropdownContainer8">
                         <ol>
                             <a download href="../../File/AKS Akuntansi Akad Lainnya.docx" style="text-decoration: none;"><li>Makalah</li></a>
                             <li>PPT (Soon)</li>
@@ -153,7 +153,7 @@
                 </li>
                 <li onclick="toggleDropdown9()">
                     <h3>Akuntansi Zakat.</h3>
-                    <div id="dropdownContainer">
+                    <div id="dropdownContainer9">
                         <ol>
                             <a download href="../../File/AKS Akuntansi Zakat.docx" style="text-decoration: none;"><li>Makalah</li></a>
                             <li>PPT (Soon)</li>
@@ -217,9 +217,121 @@
         // Fungsi untuk menggeser judul "Data Tidak Ada (2)" agar sesuai dengan posisi dropdown sebelumnya
         function adjustSecondHeadingPosition1() {
             const dropdownContainer1 = document.getElementById('dropdownContainer1');
-            if (dropdownContainer) {
+            if (dropdownContainer1) {
                 const dropdownHeight1 = dropdownContainer1.clientHeight;
-                secondHeading.style.marginTop = `${dropdownHeight}px`;
+                secondHeading.style.marginTop = `${dropdownHeight1}px`;
+            }
+        }
+
+        // Fungsi untuk menampilkan/menyembunyikan dropdown saat mengklik "Data Tidak Ada"
+        function toggleDropdown2() {
+            playlist.classList.toggle('active'); // Panggil fungsi untuk menyesuaikan posisi judul "Data Tidak Ada (2)"
+        }
+
+        // Fungsi untuk menggeser judul "Data Tidak Ada (2)" agar sesuai dengan posisi dropdown sebelumnya
+        function adjustSecondHeadingPosition2() {
+            const dropdownContainer2 = document.getElementById('dropdownContainer2');
+            if (dropdownContainer2) {
+                const dropdownHeight2 = dropdownContainer2.clientHeight;
+                secondHeading.style.marginTop = `${dropdownHeight2}px`;
+            }
+        }
+
+        // Fungsi untuk menampilkan/menyembunyikan dropdown saat mengklik "Data Tidak Ada"
+        function toggleDropdown3() {
+            playlist.classList.toggle('active'); // Panggil fungsi untuk menyesuaikan posisi judul "Data Tidak Ada (2)"
+        }
+
+        // Fungsi untuk menggeser judul "Data Tidak Ada (2)" agar sesuai dengan posisi dropdown sebelumnya
+        function adjustSecondHeadingPosition3() {
+            const dropdownContainer3 = document.getElementById('dropdownContainer3');
+            if (dropdownContainer3) {
+                const dropdownHeight3 = dropdownContainer3.clientHeight;
+                secondHeading.style.marginTop = `${dropdownHeight3}px`;
+            }
+        }
+
+        // Fungsi untuk menampilkan/menyembunyikan dropdown saat mengklik "Data Tidak Ada"
+        function toggleDropdown4() {
+            playlist.classList.toggle('active'); // Panggil fungsi untuk menyesuaikan posisi judul "Data Tidak Ada (2)"
+        }
+
+        // Fungsi untuk menggeser judul "Data Tidak Ada (2)" agar sesuai dengan posisi dropdown sebelumnya
+        function adjustSecondHeadingPosition4() {
+            const dropdownContainer4 = document.getElementById('dropdownContainer4');
+            if (dropdownContainer4) {
+                const dropdownHeight4 = dropdownContainer4.clientHeight;
+                secondHeading.style.marginTop = `${dropdownHeight4}px`;
+            }
+        }
+
+        // Fungsi untuk menampilkan/menyembunyikan dropdown saat mengklik "Data Tidak Ada"
+        function toggleDropdown5() {
+            playlist.classList.toggle('active'); // Panggil fungsi untuk menyesuaikan posisi judul "Data Tidak Ada (2)"
+        }
+
+        // Fungsi untuk menggeser judul "Data Tidak Ada (2)" agar sesuai dengan posisi dropdown sebelumnya
+        function adjustSecondHeadingPosition5() {
+            const dropdownContainer5 = document.getElementById('dropdownContainer5');
+            if (dropdownContainer5) {
+                const dropdownHeight5 = dropdownContainer5.clientHeight;
+                secondHeading.style.marginTop = `${dropdownHeight5}px`;
+            }
+        }
+
+        // Fungsi untuk menampilkan/menyembunyikan dropdown saat mengklik "Data Tidak Ada"
+        function toggleDropdown6() {
+            playlist.classList.toggle('active'); // Panggil fungsi untuk menyesuaikan posisi judul "Data Tidak Ada (2)"
+        }
+
+        // Fungsi untuk menggeser judul "Data Tidak Ada (2)" agar sesuai dengan posisi dropdown sebelumnya
+        function adjustSecondHeadingPosition6() {
+            const dropdownContainer6 = document.getElementById('dropdownContainer6');
+            if (dropdownContainer6) {
+                const dropdownHeight6 = dropdownContainer6.clientHeight;
+                secondHeading.style.marginTop = `${dropdownHeight6}px`;
+            }
+        }
+
+        // Fungsi untuk menampilkan/menyembunyikan dropdown saat mengklik "Data Tidak Ada"
+        function toggleDropdown7() {
+            playlist.classList.toggle('active'); // Panggil fungsi untuk menyesuaikan posisi judul "Data Tidak Ada (2)"
+        }
+
+        // Fungsi untuk menggeser judul "Data Tidak Ada (2)" agar sesuai dengan posisi dropdown sebelumnya
+        function adjustSecondHeadingPosition7() {
+            const dropdownContainer7 = document.getElementById('dropdownContainer7');
+            if (dropdownContainer7) {
+                const dropdownHeight7 = dropdownContainer7.clientHeight;
+                secondHeading.style.marginTop = `${dropdownHeight7}px`;
+            }
+        }
+
+        // Fungsi untuk menampilkan/menyembunyikan dropdown saat mengklik "Data Tidak Ada"
+        function toggleDropdown8() {
+            playlist.classList.toggle('active'); // Panggil fungsi untuk menyesuaikan posisi judul "Data Tidak Ada (2)"
+        }
+
+        // Fungsi untuk menggeser judul "Data Tidak Ada (2)" agar sesuai dengan posisi dropdown sebelumnya
+        function adjustSecondHeadingPosition8() {
+            const dropdownContainer8 = document.getElementById('dropdownContainer8');
+            if (dropdownContainer8) {
+                const dropdownHeight8 = dropdownContainer8.clientHeight;
+                secondHeading.style.marginTop = `${dropdownHeight8}px`;
+            }
+        }
+
+        // Fungsi untuk menampilkan/menyembunyikan dropdown saat mengklik "Data Tidak Ada"
+        function toggleDropdown9() {
+            playlist.classList.toggle('active'); // Panggil fungsi untuk menyesuaikan posisi judul "Data Tidak Ada (2)"
+        }
+
+        // Fungsi untuk menggeser judul "Data Tidak Ada (2)" agar sesuai dengan posisi dropdown sebelumnya
+        function adjustSecondHeadingPosition9() {
+            const dropdownContainer9 = document.getElementById('dropdownContainer9');
+            if (dropdownContainer9) {
+                const dropdownHeight9 = dropdownContainer9.clientHeight;
+                secondHeading.style.marginTop = `${dropdownHeight9}px`;
             }
         }
 
