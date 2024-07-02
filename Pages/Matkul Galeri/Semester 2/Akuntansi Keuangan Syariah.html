@@ -71,7 +71,7 @@
                         </ol>
                     </div>
                 </li>
-                <li onclick="toggleDropdown()">
+                <li onclick="toggleDropdown1()">
                     <h3>Sejarah Dan Pemikiran Akuntansi Syariah.</h3>
                     <div id="dropdownContainer">
                         <ol>
@@ -81,7 +81,7 @@
                         </ol>
                     </div>
                 </li>
-                <li onclick="toggleDropdown()">
+                <li onclick="toggleDropdown2()">
                     <h3>Akuntansi Mudharabah.</h3>
                     <div id="dropdownContainer">
                         <ol>
@@ -91,7 +91,7 @@
                         </ol>
                     </div>
                 </li>
-                <li onclick="toggleDropdown()">
+                <li onclick="toggleDropdown3()">
                     <h3>Akuntansi Musyarakah.</h3>
                     <div id="dropdownContainer">
                         <ol>
@@ -101,7 +101,7 @@
                         </ol>
                     </div>
                 </li>
-                <li onclick="toggleDropdown()">
+                <li onclick="toggleDropdown4()">
                     <h3>Akuntansi Murabahah.</h3>
                     <div id="dropdownContainer">
                         <ol>
@@ -111,7 +111,7 @@
                         </ol>
                     </div>
                 </li>
-                <li onclick="toggleDropdown()">
+                <li onclick="toggleDropdown5()">
                     <h3>Akuntansi Salam.</h3>
                     <div id="dropdownContainer">
                         <ol>
@@ -121,7 +121,7 @@
                         </ol>
                     </div>
                 </li>
-                <li onclick="toggleDropdown()">
+                <li onclick="toggleDropdown6()">
                     <h3>Akuntansi Istishna'.</h3>
                     <div id="dropdownContainer">
                         <ol>
@@ -131,7 +131,7 @@
                         </ol>
                     </div>
                 </li>
-                <li onclick="toggleDropdown()">
+                <li onclick="toggleDropdown7()">
                     <h3>Akuntansi Ijaroh.</h3>
                     <div id="dropdownContainer">
                         <ol>
@@ -141,7 +141,7 @@
                         </ol>
                     </div>
                 </li>
-                <li onclick="toggleDropdown()">
+                <li onclick="toggleDropdown8()">
                     <h3>Akuntansi Akad Lainnya.</h3>
                     <div id="dropdownContainer">
                         <ol>
@@ -151,7 +151,7 @@
                         </ol>
                     </div>
                 </li>
-                <li onclick="toggleDropdown()">
+                <li onclick="toggleDropdown9()">
                     <h3>Akuntansi Zakat.</h3>
                     <div id="dropdownContainer">
                         <ol>
@@ -205,6 +205,20 @@
             const dropdownContainer = document.getElementById('dropdownContainer');
             if (dropdownContainer) {
                 const dropdownHeight = dropdownContainer.clientHeight;
+                secondHeading.style.marginTop = `${dropdownHeight}px`;
+            }
+        }
+
+        // Fungsi untuk menampilkan/menyembunyikan dropdown saat mengklik "Data Tidak Ada"
+        function toggleDropdown1() {
+            playlist.classList.toggle('active'); // Panggil fungsi untuk menyesuaikan posisi judul "Data Tidak Ada (2)"
+        }
+
+        // Fungsi untuk menggeser judul "Data Tidak Ada (2)" agar sesuai dengan posisi dropdown sebelumnya
+        function adjustSecondHeadingPosition1() {
+            const dropdownContainer1 = document.getElementById('dropdownContainer1');
+            if (dropdownContainer) {
+                const dropdownHeight1 = dropdownContainer1.clientHeight;
                 secondHeading.style.marginTop = `${dropdownHeight}px`;
             }
         }
